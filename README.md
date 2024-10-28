@@ -87,6 +87,23 @@ The model analyzes a small dataset with four sakes, considering three main featu
 5. **k-NN Recommendation System:**
    - Uses k-NN to find similar sakes based on Euclidean distances in the weighted feature space.
 
+
+## Example Output
+
+The output includes scaled features for each sake, reflecting user preferences, and lists the sakes that are most similar based on those preferences. Here’s an example table:
+
+| Sake Name | Scaled Price | Scaled SMV | Scaled Brewery | Similarity Score |
+|-----------|--------------|------------|----------------|------------------|
+| Sake A    | 100          | 1.5        | 0              | 1.0             |
+| Sake B    | 200          | 1.0        | 0              | 0.8             |
+| Sake C    | 150          | 2.0        | 0              | 0.5             |
+
+In this table:
+- **Scaled Features** represent the importance of each feature based on the user’s likes and dislikes.
+- **Similarity Score** indicates how close a sake is to the user's preferred options.
+
+This setup enables users to view sake recommendations closely aligned with their preferences.
+
 ## Usage Instructions
 
 ### Installation
